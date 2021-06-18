@@ -1,0 +1,13 @@
+from microbit import *
+
+import music
+while True:
+    #display.scroll('Hello, World!')
+    #display.show(Image.HEART)
+    #sleep(2000)
+    stick_person = Image("09000:90900:99900:09000:90900")
+    #display.show(stick_person)
+    inverted_stick_person = Image("00090:00909:00090:00999:00909")
+    stick = [stick_person,inverted_stick_person,]
+    display.show(stick,delay=300)
+    music.play(music.ENTERTAINER)
